@@ -69,3 +69,7 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
 # pokemon-pwa-application
+
+In this application, the pages and design have been improved. Take this project as a basis:
+
+https://github.com/adityakmr7/pokemon-pwa-application
