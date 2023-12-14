@@ -1,4 +1,3 @@
-import logo from '../logo.svg';
 import '../App.css';
 import { useEffect, useState } from 'react';
 import { getAllPokemonList } from '../api/pokemonList';
@@ -23,6 +22,7 @@ function Catalog() {
                 {pokemonList?.map((poke,i) => {
                     return (
                         <Link
+                            key={i}
                             to={`/pokemon/${i + 1}`}
                             style={{width: '400px', height: '330px', border: '2px solid #000000', margin: '30px 10px'}}
                         >
