@@ -3,7 +3,7 @@ import {useParams} from "react-router-dom";
 import {getPokemonData} from "../api/pokemonData";
 import Layout from "../components/layout";
 import PokemonLoading from "../components/pokemonLoading";
-import {PokemonData} from "../components/pokemon";
+import {PokemonData} from "../components/pokemonData";
 import PokemonNotFound from "../components/pokemonNotFound";
 
 export default function Pokemon(){
