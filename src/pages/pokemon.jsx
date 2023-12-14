@@ -4,6 +4,7 @@ import {getPokemonData} from "../api/pokemonData";
 import Layout from "../components/layout";
 import PokemonLoading from "../components/pokemonLoading";
 import {PokemonData} from "../components/pokemon";
+import PokemonNotFound from "../components/pokemonNotFound";
 
 export default function Pokemon(){
 
@@ -22,7 +23,6 @@ export default function Pokemon(){
                 document.title = "Pokemon PWA - " + data.name;
                 setIsLoading(false);
             } catch (error) {
-                // If the request fails (404 or other errors), update the state with the error
                 setError("Pokemon not found");
             }
         }
@@ -30,14 +30,8 @@ export default function Pokemon(){
         fetchData();
     }, [id]);
 
-    if (error) {
-        // Render an error message if there's an error
-        return (
-            <Layout>
-                Pokemon Not Found
-            </Layout>
-        );
-    }
+    if ( error )
+        return (<PokemonNotFound/>);
 
     return (
         <Layout>
@@ -45,7 +39,5 @@ export default function Pokemon(){
         </Layout>
 
     );
-
-
 
 }
